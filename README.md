@@ -1,13 +1,30 @@
 # 🌸 Nguyễn Khánh Linh 🌸
 
 ## Sinh viên năm 3 - chuyên ngành Kinh doanh Quốc tế
-![Ảnh thẻ](https://github.com/kalin05/kalin05.github.io/blob/dc70c51ae55f8f38825f6653f850b06205ff71dc/%E1%BA%A3nh%20th%E1%BA%BB.jpg)
 ### 📌 Thông tin liên hệ
 - Email: nguyenkhanhlinh25112005@gmail.com
 - LinkedIn: www.linkedin.com/in/linh-nguyễn-khánh-6a4843297/
 - SĐT: 0984 973 515
 - Địa chỉ: Chùa Láng - Đống Đa - Hà Nội
+<table>
+  <tr>
+    <td width="150">
+      <img src="https://github.com/kalin05/kalin05.github.io/blob/dc70c51ae55f8f38825f6653f850b06205ff71dc/%E1%BA%A3nh%20th%E1%BA%BB.jpg" 
+           width="130" 
+           style="border-radius:50%;" />
+    </td>
+    <td>
 
+📌 <b>Thông tin liên hệ</b>  
+
+Email: nguyenkhanhlinh25112005@gmail.com  
+LinkedIn: https://www.linkedin.com/in/linh-nguyễn-khánh-6a4843297/  
+SĐT: 0984 973 515  
+Địa chỉ: Chùa Láng - Đống Đa - Hà Nội  
+
+  </td>
+  </tr>
+</table>
 ### 🎯 Mục tiêu nghề nghiệp
 Sinh viên năm ba ngành Kinh doanh Quốc tế, có niềm đam mê mạnh mẽ với lĩnh vực Marketing. Luôn sẵn sàng thử thách bản thân thông qua các cuộc thi học thuật nhằm phát triển tư duy phân tích, tư duy chiến lược và nâng cao kiến thức thực tiễn trong môi trường chuyên môn.
 
