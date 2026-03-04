@@ -13,7 +13,7 @@
     <td width="150">
       <img src="https://github.com/kalin05/kalin05.github.io/blob/dc70c51ae55f8f38825f6653f850b06205ff71dc/%E1%BA%A3nh%20th%E1%BA%BB.jpg" 
            width="130" 
-           style="border-radius:50%;" />
+           style="border-radius:100%;" />
     </td>
     <td>
 
