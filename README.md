@@ -1,7 +1,7 @@
 # 🌸 Nguyễn Khánh Linh 🌸
 
 ## Sinh viên năm 3 - chuyên ngành Kinh doanh Quốc tế
-![Ảnh thẻ](https://raw.githubusercontent.com/kalin05/kalin05.github.io/main/anh-the.jpg)
+![Ảnh thẻ](https://github.com/kalin05/kalin05.github.io/blob/dc70c51ae55f8f38825f6653f850b06205ff71dc/%E1%BA%A3nh%20th%E1%BA%BB.jpg)
 ### 📌 Thông tin liên hệ
 - Email: nguyenkhanhlinh25112005@gmail.com
 - LinkedIn: www.linkedin.com/in/linh-nguyễn-khánh-6a4843297/
