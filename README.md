@@ -9,14 +9,6 @@
 📱 **SĐT:** 0984 973 515  
 📍 **Địa chỉ:** Chùa Láng - Đống Đa - Hà Nội  
 
-  <tr>
-    <td width="150">
-      <img src="https://github.com/kalin05/kalin05.github.io/blob/dc70c51ae55f8f38825f6653f850b06205ff71dc/%E1%BA%A3nh%20th%E1%BA%BB.jpg" 
-           width="130" 
-           style="border-radius:100%;" />
-    </td>
-    <td>
-
 ### 🎯 Mục tiêu nghề nghiệp
 Sinh viên năm ba ngành Kinh doanh Quốc tế, có niềm đam mê mạnh mẽ với lĩnh vực Marketing. Luôn sẵn sàng thử thách bản thân thông qua các cuộc thi học thuật nhằm phát triển tư duy phân tích, tư duy chiến lược và nâng cao kiến thức thực tiễn trong môi trường chuyên môn.
 
