@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV – Nguyễn Khánh Linh</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1410;
+    --blush: #e8c4b0;
+    --rose: #c97b5a;
+    --cream: #faf6f1;
+    --warm-mid: #8a6b55;
+    --light-line: #e2d5c8;
+    --accent: #b85c3a;
+  }
+
+  @page { size: A4; margin: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .page {
+    width: 794px;
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Decorative background elements */
+  .page::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f0d9cc 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .page::after {
+    content: '';
+    position: absolute;
+    bottom: 80px; left: -80px;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f0d9cc 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* HEADER */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    padding: 52px 52px 36px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1.5px solid var(--light-line);
+    gap: 24px;
+  }
+
+  .name-block .label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--rose);
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .name-block h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .name-block h1 em {
+    font-style: italic;
+    color: var(--rose);
+  }
+
+  .name-block .tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: var(--warm-mid);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 12px;
+    font-weight: 300;
+  }
+
+  .contact-block {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .contact-item {
+    font-size: 11.5px;
+    color: var(--warm-mid);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+  }
+  .contact-item a {
+    color: var(--warm-mid);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .contact-item a:hover { color: var(--accent); }
+  .contact-item .icon {
+    font-size: 13px;
+    color: var(--rose);
+  }
+
+  /* BODY GRID */
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* MAIN COLUMN */
+  .main {
+    padding: 40px 40px 40px 52px;
+    border-right: 1.5px solid var(--light-line);
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* SIDE COLUMN */
+  .side {
+    padding: 40px 32px 40px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* Section header */
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--rose);
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--light-line);
+  }
+
+  /* Objective */
+  .objective p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--ink);
+    font-style: italic;
+  }
+
+  /* Experience entries */
+  .exp-entry {
+    margin-bottom: 22px;
+  }
+  .exp-entry:last-child { margin-bottom: 0; }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  .exp-org {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .exp-year {
+    font-size: 10.5px;
+    color: var(--rose);
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    white-space: nowrap;
+    padding-top: 2px;
+  }
+
+  .exp-role {
+    font-size: 11px;
+    color: var(--warm-mid);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .exp-bullets li {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #3d2e25;
+    padding-left: 14px;
+    position: relative;
+    font-weight: 300;
+  }
+  .exp-bullets li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--rose);
+    font-weight: 400;
+  }
+
+  /* Achievements */
+  .achievement-entry {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 14px;
+  }
+  .achievement-entry:last-child { margin-bottom: 0; }
+
+  .ach-badge {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--rose);
+    line-height: 1;
+    min-width: 48px;
+    text-align: center;
+    padding-top: 2px;
+  }
+
+  .ach-text strong {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 3px;
+  }
+  .ach-text span {
+    font-size: 11.5px;
+    color: var(--warm-mid);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  /* Projects */
+  .project-entry {
+    margin-bottom: 14px;
+    padding-left: 14px;
+    border-left: 2px solid var(--blush);
+  }
+  .project-entry:last-child { margin-bottom: 0; }
+
+  .project-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+
+  /* SIDE: skills */
+  .skill-group { margin-bottom: 18px; }
+  .skill-group:last-child { margin-bottom: 0; }
+
+  .skill-group-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--warm-mid);
+    margin-bottom: 8px;
+  }
+
+  .skill-tag {
+    display: inline-block;
+    font-size: 11px;
+    color: var(--ink);
+    background: rgba(201, 123, 90, 0.1);
+    border: 1px solid var(--blush);
+    border-radius: 2px;
+    padding: 3px 9px;
+    margin: 3px 3px 3px 0;
+    font-weight: 300;
+    transition: background 0.2s;
+  }
+
+  /* Education side */
+  .edu-entry { margin-bottom: 14px; }
+  .edu-entry:last-child { margin-bottom: 0; }
+
+  .edu-school {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+  .edu-degree {
+    font-size: 11.5px;
+    color: var(--warm-mid);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  .edu-year {
+    font-size: 10.5px;
+    color: var(--rose);
+    margin-top: 2px;
+  }
+
+  /* GitHub link */
+  .github-box {
+    background: var(--ink);
+    border-radius: 4px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .github-box svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--cream);
+    flex-shrink: 0;
+  }
+  .github-box a {
+    color: var(--blush);
+    font-size: 11px;
+    text-decoration: none;
+    word-break: break-all;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .header { animation: fadeUp 0.6s ease both; }
+  .main > * { animation: fadeUp 0.6s ease both; }
+  .main > *:nth-child(1) { animation-delay: 0.1s; }
+  .main > *:nth-child(2) { animation-delay: 0.2s; }
+  .main > *:nth-child(3) { animation-delay: 0.3s; }
+  .main > *:nth-child(4) { animation-delay: 0.4s; }
+  .side > * { animation: fadeUp 0.6s ease both; }
+  .side > *:nth-child(1) { animation-delay: 0.15s; }
+  .side > *:nth-child(2) { animation-delay: 0.25s; }
+  .side > *:nth-child(3) { animation-delay: 0.35s; }
+  .side > *:nth-child(4) { animation-delay: 0.45s; }
+
+  @media print {
+    body { padding: 0; background: white; }
+    .page { width: 100%; }
+    * { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="name-block">
+      <span class="label">Curriculum Vitæ</span>
+      <h1>Nguyễn<br><em>Khánh Linh</em></h1>
+      <p class="tagline">Marketing &amp; Creative Design · International Business</p>
+    </div>
+    <div class="contact-block">
+      <div class="contact-item">
+        <span class="icon">✉</span>
+        <a href="mailto:nguyenkhanhlinh25112005@gmail.com">nguyenkhanhlinh25112005@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="icon">☎</span>
+        <span>0984 973 515</span>
+      </div>
+      <div class="contact-item">
+        <span class="icon">⌖</span>
+        <span>Chùa Láng, Đống Đa, Hà Nội</span>
+      </div>
+      <div class="contact-item">
+        <span class="icon">in</span>
+        <a href="https://www.linkedin.com/in/linh-nguyễn-khánh-6a4843297/" target="_blank">LinkedIn Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- Objective -->
+      <section class="objective">
+        <div class="section-title">Profile</div>
+        <p>Third-year International Business student with a deep passion for Marketing and Creative Design. I thrive on academic challenges, competitions, and real-world projects that sharpen strategic thinking, visual storytelling, and analytical skills.</p>
+      </section>
+
+      <!-- Experience -->
+      <section>
+        <div class="section-title">Experience</div>
+
+        <div class="exp-entry">
+          <div class="exp-header">
+            <span class="exp-org">Câu lạc bộ Sở hữu trí tuệ</span>
+            <span class="exp-year">2023 – 2024</span>
+          </div>
+          <div class="exp-role">Trường Đại học Ngoại thương · Content &amp; Design</div>
+          <ul class="exp-bullets">
+            <li>Co-organised finance & digital transformation seminars attended by 300+ participants.</li>
+            <li>Wrote copy and designed visuals for a Fanpage with 25,000 followers.</li>
+            <li>Led new-member recruitment: external comms, CV screening, interviews, and onboarding.</li>
+          </ul>
+        </div>
+
+        <div class="exp-entry">
+          <div class="exp-header">
+            <span class="exp-org">Câu lạc bộ Môi trường 350 Vietnam</span>
+            <span class="exp-year">2023 – 2024</span>
+          </div>
+          <div class="exp-role">Trường Đại học Ngoại thương · Event Coordinator</div>
+          <ul class="exp-bullets">
+            <li>Managed event budgets and procurement for workshop equipment.</li>
+            <li>Sourced and coordinated keynote speakers for environmental seminars.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Achievements -->
+      <section>
+        <div class="section-title">Achievements</div>
+
+        <div class="achievement-entry">
+          <div class="ach-badge">Top<br>5</div>
+          <div class="ach-text">
+            <strong>CE Hackathon 2025</strong>
+            <span>Solved real business challenges and proposed actionable community solutions in a competitive hackathon setting.</span>
+          </div>
+        </div>
+
+        <div class="achievement-entry">
+          <div class="ach-badge">Top<br>40</div>
+          <div class="ach-text">
+            <strong>LOGICHAIN 2025</strong>
+            <span>Tackled advanced case studies in Logistics and Supply Chain Management (SCM).</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section>
+        <div class="section-title">Notable Projects</div>
+        <div class="project-entry">
+          <div class="project-name">"Thắp Lửa"</div>
+        </div>
+        <div class="project-entry">
+          <div class="project-name">"Sắc"</div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- SIDE -->
+    <aside class="side">
+
+      <!-- Education -->
+      <section>
+        <div class="section-title">Education</div>
+        <div class="edu-entry">
+          <div class="edu-school">Trường Đại học Ngoại thương</div>
+          <div class="edu-degree">Bachelor's · International Business</div>
+          <div class="edu-year">2022 – Present (Year 3)</div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section>
+        <div class="section-title">Skills</div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <span class="skill-tag">English (IELTS 7.0)</span>
+          <span class="skill-tag">Chinese (Conversational)</span>
+          <span class="skill-tag">Vietnamese (Native)</span>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Design & Creative</div>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Illustrator</span>
+          <span class="skill-tag">Canva</span>
+          <span class="skill-tag">CapCut</span>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Office & Data</div>
+          <span class="skill-tag">MOS Excel (1000)</span>
+          <span class="skill-tag">MOS Word (981)</span>
+          <span class="skill-tag">Stata</span>
+        </div>
+      </section>
+
+      <!-- GitHub -->
+      <section>
+        <div class="section-title">GitHub</div>
+        <div class="github-box">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <a href="https://github.com/kalin05/kalin05.github.io" target="_blank">github.com/kalin05</a>
+        </div>
+      </section>
+
+      <!-- Interests -->
+      <section>
+        <div class="section-title">Interests</div>
+        <span class="skill-tag">Visual Branding</span>
+        <span class="skill-tag">Content Strategy</span>
+        <span class="skill-tag">Social Media</span>
+        <span class="skill-tag">Sustainability</span>
+        <span class="skill-tag">Intellectual Property</span>
+      </section>
+
+    </aside>
+  </div>
+
+</div>
+</body>
+</html>
